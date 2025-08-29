@@ -83,8 +83,25 @@ Copiar código
 - Realizar depósitos.
 - Registrar bancos disponibles para validación.
 
+## Actores Principales
 
----
+### 1. Cliente del banco
+- Se refiere a la persona que crea su cuenta en Bankify, puede consultar el saldo y realizar depositos en su cuenta.
+
+### 2. Sistema Bankify
+- Todo lo que tiene que ver con el software principal, encargado de:
+    - Validar que los números de cuenta cumplan con las reglas de negocio.
+    - Gestionar saldos de las cuentas.
+    - Procesar depósitos y consultas.
+
+### 3. Banco Registrado
+- Es la entidad financiera asociada a la cuenta, se identifica con los dos primeros dígitos del número de cuenta y garantiza que la cuenta pertenezca a un banco válido.
+
+### 4. Administrador del Sistema
+- Es la persona encargada de:
+    - Configurar los bancos registrados en el sistema.
+    - Supervisar el correcto funcionamiento de Bankify.
+    - Gestionar reportes de seguridad, calidad y auditoría.
 
 ## 📜 Historial de Commits – Parte 1
 *(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
