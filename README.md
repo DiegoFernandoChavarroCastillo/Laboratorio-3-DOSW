@@ -103,5 +103,53 @@ Copiar código
     - Supervisar el correcto funcionamiento de Bankify.
     - Gestionar reportes de seguridad, calidad y auditoría.
 
+## Documentación Precondición necesarias para el sitema
+
+### 1. Existencia de bancos registrados
+
+- Debe existir una lista inicial de bancos válidos con sus respectivos códigos (por ejemplo: 01 = Bancolombia, 02 = Davivienda).
+- Esta lista debe ser gestionada y actualizada por el Administrador del Sistema.
+
+### 2. Acceso a una base de datos operativa
+
+- El sistema debe estar conectado a una base de datos para:
+  - Registrar nuevas cuentas.
+  - Almacenar saldos actualizados.
+  - Guardar información de los bancos registrados.
+-La base de datos debe estar disponible y segura.
+  
+### 3. Reglas de validación implementadas
+
+- Las reglas de negocio deben estar correctamente codificadas y activas en el sistema:
+  - Validación del número de cuenta (formato, unicidad, código de banco).
+  - Validación de montos de depósito (solo valores positivos).
+
+### Interfaz de usuario o API disponible
+
+- Debe existir una interfaz (web, móvil o API REST) para que:
+
+  - Los clientes creen cuentas, consulten saldo y hagan depósitos.
+  - Los administradores configuren bancos válidos.
+
+### Sistema autenticado y autorizado
+
+- Los usuarios (clientes o administradores) deben poder autenticarse con credenciales válidas.
+- El sistema debe aplicar controles de acceso según el rol del usuario:
+  - Clientes → Solo sus propias cuentas.
+  - Administradores → Gestión de bancos y supervisión del sistema.
+
+### Entorno de ejecución funcional
+
+- El sistema debe estar desplegado en un entorno que cuente con:
+  - Infraestructura tecnológica adecuada (servidores, red, almacenamiento).
+  - Herramientas de CI/CD y monitoreo.
+  - Seguridad y respaldo de datos.
+
+### 7. Integración con herramientas de calidad
+
+- Herramientas como SonarQube (análisis estático) y JaCoCo (cobertura de pruebas) deben estar integradas para garantizar la calidad del código.
+- Las pruebas automatizadas deben estar implementadas con TDD.
+
+
 ## 📜 Historial de Commits – Parte 1
 *(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
