@@ -47,7 +47,7 @@ Laboratorio-3-DOSW/
 │
 ├── pom.xml
 ├── .gitignore
-└── README.md # (Este archivo)
+└── README.md # 
 
 yaml
 Copiar código
@@ -60,6 +60,29 @@ Copiar código
 
 - **Prueba unitaria mínima con JUnit 5:**  
   ![Test JUnit](docs/imagenes/test-ok.png)
+
+---
+
+## 📸 Evidencias – reto 1
+# Identificación de Requerimientos
+
+## Reglas de negocio
+- Las cuentas deben tener 10 dígitos exactos.
+- Los dos primeros dígitos corresponden al banco (ej: 01 Bancolombia, 02 Davivienda).
+- Solo se permiten números, sin letras ni caracteres especiales. 
+- No pueden existir dos cuentas con el mismo número. 
+- Los depósitos deben ser valores positivos.
+- El saldo se actualiza inmediatamente después de un depósito.
+
+---
+
+## Funcionalidades principales
+- Crear cuentas válidas.
+- Validar que las cuentas cumplan las reglas.
+- Consultar el saldo de una cuenta.
+- Realizar depósitos.
+- Registrar bancos disponibles para validación.
+
 
 ---
 
