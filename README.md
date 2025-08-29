@@ -193,6 +193,9 @@ Copiar código
 ### Diagrama de Casos uso
 ![DiagramaCasosUso.png](docs%2Fuml%2FDiagramaCasosUso.png)
 
+### Diagrama de clases
+![DiagramaClasesBankify.png](docs%2Fuml%2FDiagramaClasesBankify.png)
+
 
 ## 📜 Historial de Commits – Parte 1
 *(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
