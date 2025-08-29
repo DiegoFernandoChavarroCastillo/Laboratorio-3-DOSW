@@ -20,3 +20,12 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+target/
+*.iml
+.idea/
+.project
+.classpath
+.settings/
+*.log
+.DS_Store
