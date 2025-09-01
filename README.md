@@ -150,6 +150,34 @@ Copiar código
 - Herramientas como SonarQube (análisis estático) y JaCoCo (cobertura de pruebas) deben estar integradas para garantizar la calidad del código.
 - Las pruebas automatizadas deben estar implementadas con TDD.
 
+## RETO  #2 : DISEÑANDO
+![Diagrama de Contexto.png](docs/uml/Diagrama%20de%20Contexto.png)
+
+## 📌 Diagrama de Contexto - Bankify
+
+### 🔹 Elementos del diagrama
+
+#### 👤 Actor: Cliente del Banco
+- Representa al usuario final del sistema, es decir, la persona que va a utilizar **Bankify** para gestionar su cuenta.
+- Su interacción principal es **“Usar el sistema”**, lo cual engloba funcionalidades como:
+  - Crear una cuenta.
+  - Validar la cuenta.
+  - Consultar saldo.
+  - Realizar depósitos.
+
+#### 💻 Sistema: Bankify
+- Es el software que se está desarrollando.
+- Actúa como **intermediario** entre el cliente y los bancos registrados.
+- Dentro del sistema se implementan las siguientes reglas de negocio:
+  - Validar que los números de cuenta tengan **10 dígitos exactos**.
+  - Validar que los **dos primeros dígitos correspondan a un banco registrado**.
+  - Evitar **letras o caracteres especiales** en los números de cuenta.
+  - Permitir **consultar saldo** y **realizar depósitos**.
+
+#### 🏦 Entidad externa: Banco Registrado
+- Representa los **bancos autorizados** (por ejemplo: **Bancolombia, Davivienda**, etc.) que están conectados a Bankify.
+- Bankify se comunica con estos bancos para ejecutar operaciones como **“Depositar dinero”**, garantizando que el dinero realmente se registre en la cuenta del cliente.
+
 
 ## 📜 Historial de Commits – Parte 1
 *(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
