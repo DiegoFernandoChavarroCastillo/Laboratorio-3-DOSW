@@ -153,7 +153,7 @@ Copiar código
 ##  📸 Evidencias – reto 2
 
 ### Diagrama de Contexto 
-![Diagrama de Contexto Bankify.png](docs%2Fuml%2FDiagrama%20de%20Contexto%20Bankify.png)
+![Diagrama de Contexto Bankify.png](docs/uml/Diagrama%20de%20Contexto%20Bankify.png)
 
 ### Explicación:
 #### Bankify:
@@ -181,7 +181,7 @@ Copiar código
   - "Depositar Dinero" son referencias necesarias para validar la información antes de permitir ciertas acciones (como depósitos).
   - 
 ### Diagrama de Casos uso
-![DiagramaCasosUso.png](docs%2Fuml%2FDiagramaCasosUso.png)
+![DiagramaCasosUso.png](docs/uml/DiagramaCasosUso.png)
 
 
 ## Historias de Usuario (Cliente)
