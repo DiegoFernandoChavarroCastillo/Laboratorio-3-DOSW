@@ -151,5 +151,61 @@ Copiar código
 - Las pruebas automatizadas deben estar implementadas con TDD.
 
 
+
+##  📸 Evidencias – reto 2
+
+### Diagrama de Contexto 
+![Diagrama de Contexto Bankify.png](docs/uml/Diagrama%20de%20Contexto%20Bankify.png)
+
+### Explicación:
+#### Bankify:
+
+- Es el sistema central de la solución fintech.
+- Se encarga de procesar todas las operaciones bancarias básicas: validación de cuentas, depósitos, consultas de saldo, etc.
+- Es el componente con el que interactúan tanto los clientes como las entidades externas (en este caso, los bancos registrados).
+
+#### Cliente del Banco:
+
+- Representado como un actor externo (stickman).
+- Es el usuario final del sistema.
+- En el diagrama:
+- "Usa el sistema" → Esto significa que el cliente utiliza Bankify para hacer operaciones como:
+  - Crear su cuenta.
+  - Consultar Saldo.
+  - Hacer depósitos.
+  - Validar la cuenta.
+   
+#### Banco Registrado
+
+- Representa las entidades bancarias autorizadas (como Bancolombia, Davivienda, etc.).
+- En el sistema Bankify, los bancos están registrados con un código único (por ejemplo: 01, 02).
+- Relación con Bankify:
+  - "Depositar Dinero" son referencias necesarias para validar la información antes de permitir ciertas acciones (como depósitos).
+  - 
+### Diagrama de Casos uso
+![DiagramaCasosUso.png](docs/uml/DiagramaCasosUso.png)
+
+
+## Historias de Usuario (Cliente)
+- Como cliente, quiero crear una cuenta bancaria válida, para poder realizar operaciones financieras.
+- Como cliente, quiero validar que mi cuenta cumpla con las reglas, para asegurarme de que sea aceptada por el sistema.
+- Como cliente, quiero consultar el saldo de mi cuenta, para saber cuánto dinero tengo disponible.
+- Como cliente, quiero realizar depósitos en mi cuenta, para incrementar mi saldo y usarlo cuando lo necesite.
+
+## Historias de Usuario (Banco)
+- Como banco, quiero registrar mis códigos de identificación, para que el sistema pueda validar si una cuenta pertenece a mi entidad.
+- Como banco, quiero que el sistema valide los primeros dos dígitos de la cuenta, para asegurar que las cuentas pertenezcan a un banco autorizado.
+
+![historias de usuario Excel.jpeg](docs/imagenes/historias%20de%20usuario%20Excel.jpeg)
+
+
+
+### Diagrama de clases
+![DiagramaClasesBankify.png](docs%2Fuml%2FDiagramaClasesBankify.png)
+
+
+
+
+
 ## 📜 Historial de Commits – Parte 1
 *(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
