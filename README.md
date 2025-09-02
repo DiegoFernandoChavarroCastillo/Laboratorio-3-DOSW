@@ -179,6 +179,10 @@ Copiar código
 - En el sistema Bankify, los bancos están registrados con un código único (por ejemplo: 01, 02).
 - Relación con Bankify:
   - "Depositar Dinero" son referencias necesarias para validar la información antes de permitir ciertas acciones (como depósitos).
+  - 
+### Diagrama de Casos uso
+![DiagramaCasosUso.png](docs%2Fuml%2FDiagramaCasosUso.png)
+
 
 ## Historias de Usuario (Cliente)
 - Como cliente, quiero crear una cuenta bancaria válida, para poder realizar operaciones financieras.
@@ -190,11 +194,14 @@ Copiar código
 - Como banco, quiero registrar mis códigos de identificación, para que el sistema pueda validar si una cuenta pertenece a mi entidad.
 - Como banco, quiero que el sistema valide los primeros dos dígitos de la cuenta, para asegurar que las cuentas pertenezcan a un banco autorizado.
 
-### Diagrama de Casos uso
-![DiagramaCasosUso.png](docs%2Fuml%2FDiagramaCasosUso.png)
+![historias de usuario Excel.jpeg](docs/imagenes/historias%20de%20usuario%20Excel.jpeg)
+
+
 
 ### Diagrama de clases
 ![DiagramaClasesBankify.png](docs%2Fuml%2FDiagramaClasesBankify.png)
+
+
 
 
 ## 📜 Historial de Commits – Parte 1
