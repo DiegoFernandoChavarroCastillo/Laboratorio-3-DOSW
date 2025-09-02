@@ -150,5 +150,6 @@ Copiar código
 - Herramientas como SonarQube (análisis estático) y JaCoCo (cobertura de pruebas) deben estar integradas para garantizar la calidad del código.
 - Las pruebas automatizadas deben estar implementadas con TDD.
 
+
 ## 📜 Historial de Commits – Parte 1
 *(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
