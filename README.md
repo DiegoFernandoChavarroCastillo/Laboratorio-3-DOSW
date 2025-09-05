@@ -63,7 +63,7 @@ Copiar código
 
 ---
 
-## 📸 Evidencias – reto 1
+## 🎯 reto 1
 # Identificación de Requerimientos
 
 ## Reglas de negocio
@@ -150,9 +150,9 @@ Copiar código
 - Herramientas como SonarQube (análisis estático) y JaCoCo (cobertura de pruebas) deben estar integradas para garantizar la calidad del código.
 - Las pruebas automatizadas deben estar implementadas con TDD.
 
+---
 
-
-##  📸 Evidencias – reto 2
+##  🎯 Reto 2
 
 ### Diagrama de Contexto 
 ![Diagrama de Contexto Bankify.png](docs/uml/Diagrama%20de%20Contexto%20Bankify.png)
@@ -203,11 +203,120 @@ Copiar código
 ### Diagrama de clases
 ![DiagramaClasesBankify.png](docs%2Fuml%2FDiagramaClasesBankify.png)
 
+---
+
+## 🎯 RETO 3 :Una estimacion Autorizada
+
+### Evidencia:
 
 
-## RETO 3 :Una estimacion Autorizada
+#### HISTORIA DE USUARIO 1 👤
+
+![Ret3-cap1.png](docs/imagenes/Ret3-cap1.png)
+
+---
+
+#### HISTORIA DE USUARIO 2 👤
+
+![reto3-HDU2.png](docs/imagenes/reto3-HDU2.png)
+
+---
+
+#### HISTORIA DE USUARIO 3 👤
+
+![HDU3.png](docs/imagenes/HDU3.png)
+
+---
+
+#### HISTORIA DE USUARIO 4 👤
+
+![HDU4.png](docs/imagenes/HDU4.png)
+
+---
+
+#### HISTORIA DE USUARIO 5 👤
+
+![HDU5.png](docs/imagenes/HDU5.png)
+
+---
+
+#### HISTORIA DE USUARIO 6 👤
+
+![HDU6.png](docs/imagenes/HDU6.png)
+
+---
+
+#### RESUMEN FINAL
+
+![FINAL.png](docs/imagenes/FINAL.png)
+
+---
+
+## 🎯 Reto 4 : Tiempo de desarrollo
+
+### Evidencia:
+
+#### Pruebas unitarias de las clases GetorCuentas y ValidadorCuentas
+![reto_4_Test.png](docs/imagenes/reto_4_Test.png)
+
+---
+
+Este proyecto implementa un sistema simple para **gestionar cuentas bancarias y validarlas**, siguiendo los principios de **Desarrollo Ágil** y aplicando el ciclo **TDD (Rojo → Verde → Refactor)**.
+
+Incluye:
+- **Clases modelo** (`Cuenta`, `ValidadorCuentas`, `GestorCuentas`).
+- **Validación de cuentas** según códigos de banco.
+- **Gestión de cuentas** (creación, depósitos, consultas).
+- **Pruebas unitarias con JUnit 5**.
+- Uso de **Streams y Lambdas** para simplificar el código.
+
+---
+
+## ✅ Principios aplicados
+
+### 1. Principio de Responsabilidad Única 
+Cada clase tiene una única responsabilidad:
+- `Cuenta`: modelo de cuenta bancaria.
+- `ValidadorCuentas`: valida si una cuenta pertenece a un banco autorizado.
+- `GestorCuentas`: gestiona operaciones sobre cuentas (crear, depositar, consultar).
+
+### 2. Principio de Abierto/Cerrado 
+`ValidadorCuentas` permite admitir nuevos bancos sin modificar la clase, solo pasando una lista diferente de códigos válidos.
+
+### 3. Principio de Inversión de Dependencias 
+El validador recibe como dependencia la lista de códigos válidos desde fuera, evitando acoplamiento rígido.
+
+### 4. Uso de TDD (Test Driven Development)
+Se aplicó el ciclo:
+- **Rojo** → se crean las pruebas unitarias (fallan inicialmente).
+- **Verde** → se implementa el código mínimo para pasarlas.
+- **Refactor** → se mejora el código usando Streams y Lambdas.
+
+### 5. Clean Code
+- Métodos y variables con nombres descriptivos.
+- Uso de **JavaDoc** en cada clase.
+- Separación clara de responsabilidades.
+
+---
+
+## ✅ Patrones de diseño utilizados
+
+### Patrón Repositorio (Repository Pattern)
+`GestorCuentas` actúa como repositorio de cuentas en memoria. Permite crear, consultar y listar cuentas sin exponer directamente el `Map`.
+
+### Patrón Estrategia (Strategy Pattern) *(incipiente)*
+La validación puede extenderse para diferentes estrategias de validación sin modificar la clase existente.
+
+### Patrón Value Object (VO)
+`Cuenta` representa un objeto de dominio con identidad propia (número de cuenta).  
+
+
+---
+
+## 🎯 Reto 5 : Cuidado que ahi viene JaCOCO
 
 
 
-## 📜 Historial de Commits – Parte 1
-*(Cada commit debe tener el formato: `Parte 1 – Nombre Integrante: Acción realizada`)*  
+---
+
+## 🎯 Reto 6 : SonarQube
