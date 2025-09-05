@@ -9,7 +9,7 @@ public class PlanningPokerApp {
     public static void ejecutar() {
         Scanner sc = new Scanner(System.in);
 
-        // HISTORIAS (traídas del RETO 2 — ya proporcionadas)
+
         List<HistoriaUsuario> historias = new ArrayList<>();
         historias.add(new HistoriaUsuario("US-01", "Como cliente, quiero crear una cuenta bancaria válida, para poder realizar operaciones financieras."));
         historias.add(new HistoriaUsuario("US-02", "Como cliente, quiero validar que mi cuenta cumpla con las reglas, para asegurarme de que sea aceptada por el sistema."));
