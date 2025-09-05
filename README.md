@@ -315,7 +315,30 @@ La validación puede extenderse para diferentes estrategias de validación sin m
 
 ## 🎯 Reto 5 : Cuidado que ahi viene JaCOCO
 
+![CoverturaInicial.png](docs/imagenes/CoverturaInicial.png)
+Inicialmente el porcentaje de cobertura de instrucciones es el 22%, mientras
+que la cobertura de ramas es del 5%,y si faltan lineas y condiciones que las
+pruebas no cubren.
 
+![CoverturaFinal.png](docs/imagenes/CoverturaFinal.png)
+Luego de realizar las respectivas pruebas adicionales, logramos observar que la
+cobertura de las pruebas para los retos 3 y 4 ya superan el 85% tanto en instrucciones
+como en ramas.
+
+En cuanto al reto 3, Para mejorar la cobertura añadimos pruebas que simularon la entrada por consola
+en PlanningPokerApp, lo que permitió ejecutar sus flujos principales (lectura de integrantes, votos y consenso)
+y lograr la cobertura deseada ademas de probar tambien Votación e HistoriaUsuario.
+
+Y en cuanto al resto 4, tuvimos que agregar 4 pruebas especificamente para probar:
+-Obtener el titular.
+-Convertir a String.
+-Retiro invalido(por condición del if)
+-Deposito invalido(por condición del if)
+
+La importancia del porcentaje de este codigo radica en que le permite al usuario final
+encontrar una mayor seguridad y confianza en base a la cantidad de tareas que deberia
+realizar el sistema y se encuentran correctas, ademas de orientar al programador sobre el
+estado del mismo.
 
 ---
 
