@@ -13,13 +13,17 @@
   <packaging>jar</packaging>
 
   <properties>
-    <!-- Java 17 -->
+    <!-- Otras propiedades que ya tienes -->
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.release>17</maven.compiler.release>
-
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.jupiter.version>5.10.2</junit.jupiter.version>
+
+    <!-- Propiedades de SonarQube -->
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <sonar.login>sqa_9dd4528eb9b6731b4e8a2a81ecbd58b5176ff815</sonar.login>
+    <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
   </properties>
 
   <dependencies>

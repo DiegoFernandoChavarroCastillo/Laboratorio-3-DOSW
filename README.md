@@ -343,3 +343,14 @@ estado del mismo.
 ---
 
 ## 🎯 Reto 6 : SonarQube
+- Ejecutar análisis de SonarQube
+![reto62.png](docs/imagenes/reto62.png)
+
+
+- Captura de pantalla del dashboard de SonarQube:
+  ![reto61.png](docs/imagenes/reto61.png)
+
+# Reflexiones:
+- Diego Chavarro: Las pruebas son fundamentales para encontrar fallos a tiempo, lo que ayuda a que el código sea de mejor calidad y que el programa funcione exactamente como se espera.
+- Valeria Bermudez: 
+- David Palacios:
